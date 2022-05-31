@@ -2,9 +2,13 @@
 
 ## Contacts
 **Location:** Saint-Petersburg, Russia
+
 **Phone:** +7(911)722-80-68
+
 **Email:** ekaterinalf@mail.ru
+
 **Telegram:** @ekaterinalf
+
 **Discord:** Ekaterina (@ekaterinalf)
 
 ## About Me
@@ -40,9 +44,11 @@ Frontend developer since 2021
 
 ## Education
 **St. Petersburg State University of Culture and Arts** - 2011
+
 **Elbrus Coding Bootcamp** - 2021
 
 ## Languages
 **Russian:** native speaker
+
 **English:** A2
 
