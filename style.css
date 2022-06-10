@@ -1,0 +1,405 @@
+:root {
+  --lilac: #a16a94;
+  --orange: #de935f;
+  --blue: #89b6c5;
+  --green: #b5bd68;
+  --yellow: #ecb613;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.lilac {
+  color: var(--lilac);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+h1, h2 {
+  font-weight:normal;
+  font-size: 40px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.experienceSection, #aboutMe {
+  margin-top: 0;
+}
+
+header {
+  margin: 100px 15px 0;
+  height: 100vh;
+}
+
+.headerName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.avatar {
+  border-radius: 50%;
+  position: relative;
+  animation: avatar-animate 3.5s;
+}
+
+@keyframes avatar-animate {
+  0% {
+    top:-30%;
+    animation-timing-function: ease-in;
+  }
+  30% {
+    top:60%;
+    animation-timing-function: ease-out;
+    transform: rotate(180deg);
+  }
+  40% {
+    top: 20%;
+  }
+  45% {
+    top:17%;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    top:60%;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    top:0;
+    animation-timing-function: ease-out;
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.navItem {
+  margin-right: 30px;
+  height: 40px;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #000;
+  padding: 15px 30px;
+}
+
+.aboutMeBut a {
+  background-color: var(--yellow);
+}
+
+.skillsBut a {
+  border: 3px solid #000;
+  background-color: white;
+  padding: 12px 30px;
+}
+
+.experienceBut a {
+  background-color: var(--lilac);
+}
+
+.educationBut a {
+ border: 3px dotted var(--orange);
+ color: var(--orange);
+ font-weight: 600;
+ padding: 12px 30px;
+}
+
+.contactBut a {
+  background-color: var(--blue);
+}
+
+main {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+#experience {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.skillsSection ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 100px;
+}
+
+.skillsSection li::before {
+  content: '<';
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.skillsSection li::after {
+  content: '/>';
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+pre {
+  text-align: left;
+  margin: 0;
+}
+
+.educationSection div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--yellow);
+}
+
+.educationSection div p:nth-child(2) {
+  width: 205px;
+}
+
+.educationSection div p {
+  text-align: left;
+}
+
+.educationSection div p:nth-child(3) {
+  width: 245px;
+}
+
+.educationSection div p:nth-child(4) {
+  width: 375px;
+}
+
+.languagesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.languagesContainer p {
+  position: relative;
+  padding-left: 10px;
+}
+
+.languagesContainer p:last-child {
+  margin-left: 50px;
+}
+
+.languagesContainer p::before {
+  position: absolute;
+  content: '';
+  background-color: var(--yellow);
+  height: 30px;
+  width: 3px;
+  left: 0;
+}
+
+#contact {
+  background-color: rgba(236, 182, 19, .5);
+  margin-top: 50px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+
+.contactContainer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contactContainer ul li {
+  margin: 0 25px;
+}
+
+.contactContainer ul li:last-child {
+  margin-right: 0;
+}
+
+.contactContainer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (min-width: 960px) and (max-width: 1120px) {
+  h1, h2 {
+    font-size: 35px;
+  }
+  main {
+    margin: 0 5%;
+    max-width: 90vw;
+  }
+  pre {
+    font-size: 16px;
+  }
+  .contactContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contactContainer ul li {
+    margin: 0 10px;
+  }
+  .educationSection div p {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    margin-top: 70px;
+  }
+  .headerName {
+    font-size: 25px;
+  }
+  h1, h2 {
+    font-size: 25px;
+  }
+  main {
+    margin: 0 5%;
+    max-width: 90vw;
+  }
+  .codeSection {
+    display: none;
+  }
+  #experience {
+    margin-top: 50px;
+  }
+  .navList {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .navItem {
+    margin: 40px 0 0 20px;
+  }
+  .educationSection div p {
+    margin: 0;
+    padding: 10px;
+  }
+  .contactContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  .contactContainer ul li {
+    margin: 0 10px;
+  }
+  .copyright {
+    order: 2;
+  }
+  .contactContainer ul {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  main {
+    margin: 0 5%;
+    max-width: 90vw;
+  }
+  .codeSection {
+    display: none;
+  }
+  .navList {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .navItem {
+    margin: 20px 0 0 0;
+  }
+  .contactContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  .contactContainer ul li {
+    margin: 10px 10px;
+  }
+  .copyright {
+    order: 2;
+  }
+  .contactContainer ul {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .educationSection div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .educationSection div p {
+    margin: 0;
+    padding: 5px;
+  }
+  #experience {
+    margin-top: 50px;
+  }
+  .avatar {
+    width: 250px;
+  }
+  .headerName {
+    flex-direction: column;
+  }
+  .headerName h1 {
+    margin: 5px 0;
+    font-size: 30px;
+  }
+  .headerName h2 {
+    margin: 5px 0;
+  }
+  .headerName span {
+    display: none;
+  }
+  .skillsSection ul {
+    max-height: 150px;
+  }
+}
